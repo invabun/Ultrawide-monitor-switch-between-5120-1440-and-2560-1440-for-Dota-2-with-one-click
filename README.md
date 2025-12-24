@@ -1,124 +1,178 @@
-# Resolution Switcher
+# Dota2 Ultrawide Resolution Switcher
 
-A simple Windows utility to quickly toggle between **2560x1440** and **5120x1440** display resolutions with a single click. The window closes automatically after switching - no clicks required!
+A simple Windows utility to **instantly switch between 5120x1440 and 2560x1440 resolutions** for **Dota 2** on **ultrawide monitors** — with one double-click.
+The window closes automatically after switching. No extra clicks.
 
-## Features
+---
 
-- ✅ **One-click resolution switching** between 2560x1440 and 5120x1440
-- ✅ **Silent operation** - window closes automatically (no "Press any key" prompts)
-- ✅ **No administrator privileges required** (in most cases)
-- ✅ **Lightweight and fast** - uses NirCmd utility
-- ✅ **Desktop shortcut ready** - create a shortcut for instant access
+## 🎮 Why This Tool Exists
 
-## Requirements
+I am still prefer play dota in 2560x1440 due to minimap focus and overall performance. 
+but every time like to play had to right click display scroll click click clikc .....
+yeah I am lazy . 
 
-- Windows 10/11
-- PowerShell (included with Windows)
-- Display/monitor that supports both 2560x1440 and 5120x1440 resolutions
+This tool lets me:
+* Use **5120x1440** for desktop/work
+* Switch to **2560x1440** before launching Dota 2 just double click a desktop shortcut.
+* Switch back after gaming — instantly
 
-## Installation
+No settings menus. Just one click.
+
+---
+
+## ⚡ Quick Start
+
+1. Download or clone this repository
+2. Double-click `setup.bat` (first time only)
+3. Then double-click `switch_resolution.bat`
+4. Resolution toggles instantly
+
+That’s it.
+
+---
+
+## ✨ Features
+
+* ✅ One-click toggle between **5120x1440 ↔ 2560x1440**
+* ✅ Optimized for **Dota 2** on ultrawide monitors
+* ✅ Silent operation — window closes automatically
+* ✅ No admin rights required (in most cases)
+* ✅ Lightweight — uses NirCmd utility
+* ⭐ **Desktop shortcut ready for instant access**
+
+---
+
+## 🖥️ Requirements
+
+* Windows 10 / 11
+* PowerShell (included with Windows)
+* Monitor that supports both **5120x1440** and **2560x1440**
+
+---
+
+## 📦 Installation
 
 ### Option 1: Automatic Setup (Recommended)
 
 1. Download or clone this repository
-2. **Double-click `setup.bat`** - it will automatically download NirCmd
+2. **Double-click `setup.bat`** — it will automatically download NirCmd
 3. Done! You can now use `switch_resolution.bat`
 
-**Alternative:** If `setup.bat` doesn't work, right-click `setup_nircmd.ps1` → **Run with PowerShell**
+**Alternative:** If `setup.bat` doesn’t work, right-click `setup_nircmd.ps1` → **Run with PowerShell**
+
+---
 
 ### Option 2: Manual Setup
 
 1. Download or clone this repository
-2. Download NirCmd from [nirsoft.net](https://www.nirsoft.net/utils/nircmd.html)
+2. Download NirCmd from [https://www.nirsoft.net/utils/nircmd.html](https://www.nirsoft.net/utils/nircmd.html)
 3. Extract `nircmd.exe` and place it in the same folder as `switch_resolution.bat`
 4. Done!
 
-## Usage
+---
+
+## ▶️ Usage
 
 ### ⚠️ Important: Which File to Run?
 
-**Always double-click `switch_resolution.bat`** - NOT the .ps1 files!
+👉 **Always double-click `switch_resolution.bat`** — NOT the `.ps1` files.
 
-- ✅ **DO**: Double-click `switch_resolution.bat` (this is the main file)
-- ❌ **DON'T**: Double-click `.ps1` files directly (Windows will open them as text files)
+* ✅ DO: Double-click `switch_resolution.bat`
+* ❌ DON’T: Double-click `.ps1` files directly (Windows opens them as text)
 
-The `.ps1` files are PowerShell scripts that are called automatically by the `.bat` file. You don't need to run them manually.
+The `.ps1` scripts are called automatically by the `.bat` file.
 
-### Basic Usage
+---
 
-Simply double-click `switch_resolution.bat` to toggle between resolutions:
-- If current resolution is **2560x1440** → switches to **5120x1440**
-- If current resolution is **5120x1440** → switches to **2560x1440**
-- If current resolution is neither → switches to **2560x1440**
+### 🎯 Basic Usage
 
-The command window will close automatically after switching (no clicks needed).
+Just double-click `switch_resolution.bat`:
 
-### Create Desktop Shortcut
+* If current is **5120x1440** → switches to **2560x1440**
+* If current is **2560x1440** → switches to **5120x1440**
+* If neither → defaults to **2560x1440**
+
+The window closes automatically after switching.
+
+---
+
+### ⭐ Create Desktop Shortcut (Highly Recommended)
+
+For the best experience, create a desktop shortcut so you can switch resolution before and after gaming in one click:
 
 1. Right-click on `switch_resolution.bat`
-2. Select **Send to** → **Desktop (create shortcut)**
-3. Optionally rename the shortcut (e.g., "Switch Resolution")
-4. Optionally change the icon: Right-click shortcut → Properties → Change Icon
+2. Select **Send to → Desktop (create shortcut)**
+3. Rename it (e.g., `Dota2 Resolution Switcher`)
+4. (Optional) Change icon: Right-click shortcut → **Properties → Change Icon**
 
-Now you can switch resolutions with a single double-click from your desktop!
+Now you can switch resolutions instantly from your desktop before launching Dota 2.
 
-## Files Included
+---
 
-### Essential Files (Required)
+## 📁 Files Included
 
-- **`switch_resolution.bat`** - Main launcher script (double-click this)
-- **`switch_resolution_nircmd.ps1`** - PowerShell script that performs the resolution switch
-- **`nircmd.exe`** - NirCmd utility (required, downloaded by setup script)
+### Essential Files
+
+* `switch_resolution.bat` — Main launcher (double-click this)
+* `switch_resolution_nircmd.ps1` — PowerShell script to detect and switch resolution
+* `nircmd.exe` — NirCmd utility (downloaded by setup)
 
 ### Optional Files
 
-- **`setup.bat`** - Easy setup launcher (double-click to download NirCmd)
-- **`setup_nircmd.ps1`** - Automatic setup script (called by setup.bat)
-- **`README.md`** - This file
-- **`QUICK_START.txt`** - Quick reference guide
+* `setup.bat` — Automatic NirCmd setup launcher
+* `setup_nircmd.ps1` — Setup PowerShell script
+* `README.md` — This guide
+* `QUICK_START.txt` — Quick reference
 
-## How It Works
+---
 
-1. The script detects the current screen resolution
-2. Determines the target resolution (switches between the two)
-3. Uses NirCmd to change the display resolution
-4. Exits silently (window closes automatically)
+## ⚙️ How It Works
 
-## Troubleshooting
+1. Detects current screen resolution
+2. Chooses the target resolution (toggles between the two)
+3. Uses NirCmd to change display resolution
+4. Exits silently
 
-### ".ps1 File Opens as Text File" / "PowerShell Script Won't Run"
+---
 
-**This is normal!** Windows treats `.ps1` files as text files by default. 
+## 🛠️ Troubleshooting
 
-**Solution:**
-- **Don't double-click `.ps1` files directly**
-- **Always use `switch_resolution.bat`** - it will automatically run the PowerShell scripts
-- For `setup_nircmd.ps1`: Right-click → **Run with PowerShell**, or open PowerShell and type: `.\setup_nircmd.ps1`
+### ".ps1 file opens as text"
 
-### "NirCmd.exe not found" Error
+This is normal on Windows.
 
-- **Double-click `setup.bat`** to download it automatically
-- Or manually download from [nirsoft.net](https://www.nirsoft.net/utils/nircmd.html) and place `nircmd.exe` in the script folder
+✅ Always run `switch_resolution.bat` instead.
 
-### Resolution Change Fails
+---
 
-- **Check if your monitor supports the target resolution** - Open Windows Settings → Display → Advanced display settings
-- **Try running as Administrator** - Right-click `switch_resolution.bat` → Run as administrator
-- **Update your graphics driver** - Outdated drivers may not support certain resolutions
-- **Check Windows display settings** - Ensure the resolution is available in Windows Settings
+### "NirCmd.exe not found"
 
-### Window Still Shows / Doesn't Close
+* Double-click `setup.bat` to download automatically
+* Or manually place `nircmd.exe` in the script folder
 
-- Make sure you're using the latest version of the script
-- The window should close automatically - if it doesn't, there may be an error (check the output)
-- Try running `switch_resolution.bat` directly (not through a shortcut that might have issues)
+---
 
-### Customizing Resolutions
+### Resolution change fails
 
-To switch between different resolutions, edit `switch_resolution_nircmd.ps1`:
+* Ensure your monitor supports the target resolutions
+* Try **Run as administrator**
+* Update graphics drivers
+* Check Windows display settings
+
+---
+
+### Window doesn’t close
+
+* Use the latest version
+* Errors may be shown if something fails
+
+---
+
+## 🔧 Customizing Resolutions
+
+Edit `switch_resolution_nircmd.ps1`:
 
 ```powershell
-# Change these values to your desired resolutions
 if ($currentRes -eq "2560x1440") {
     $targetWidth = 5120
     $targetHeight = 1440
@@ -128,33 +182,37 @@ if ($currentRes -eq "2560x1440") {
 }
 ```
 
-## Technical Details
+---
 
-- **NirCmd**: A command-line utility by NirSoft for Windows system operations
-- **PowerShell**: Used for resolution detection and script execution
-- **Window Style**: Hidden window mode prevents command prompt from showing
-- **Exit Codes**: 0 = success, 1 = error (only shown if error occurs)
+## 📜 License
 
-## License
+* Scripts in this project: **MIT License**
+* Uses **NirCmd** by NirSoft (freeware)
 
-This project uses:
-- **NirCmd** by NirSoft - Freeware ([nirsoft.net](https://www.nirsoft.net/utils/nircmd.html))
-- Scripts are provided as-is for personal use
+---
 
-## Credits
+## 👤 Author
 
-- Resolution switching powered by [NirCmd](https://www.nirsoft.net/utils/nircmd.html) by NirSoft
-- Script created for quick resolution toggling
+Created by [invabun](https://github.com/invabun)
 
-## Contributing
+If this tool helps you, feel free to star the repo or open an issue.
 
-Feel free to submit issues or pull requests if you have improvements or encounter problems!
+---
 
-## Changelog
+## 🗑️ Uninstall
 
-### Version 1.0
-- Initial release
-- Toggle between 2560x1440 and 5120x1440
-- Silent operation (auto-closing window)
-- Automatic NirCmd setup script
+1. Delete the project folder
+2. Remove any desktop shortcuts
 
+No system changes remain.
+
+---
+
+## 📝 Changelog
+
+### v1.0
+
+* Initial release
+* Toggle between 5120x1440 and 2560x1440
+* Silent operation
+* Automatic NirCmd setup
