@@ -3,7 +3,8 @@
 A simple Windows utility to **instantly switch between 5120x1440 and 2560x1440 resolutions** for **Dota 2** on **ultrawide monitors** — with one double-click.
 The window closes automatically after switching. No extra clicks.
 
----
+--
+
 
 ## 🎮 Why This Tool Exists
 
@@ -16,7 +17,8 @@ This tool lets me:
 * Switch to **2560x1440** before launching Dota 2 just double click a desktop shortcut.
 * Switch back after gaming — instantly
 
-No settings menus. Just one click.
+here is short video (now updated no need admin so the yes no popup screen no longer show)
+https://www.youtube.com/shorts/znN8-oXJh4I
 
 ---
 
