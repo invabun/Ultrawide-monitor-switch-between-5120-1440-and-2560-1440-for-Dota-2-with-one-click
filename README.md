@@ -1,220 +1,144 @@
 # Dota2 Ultrawide Resolution Switcher
 
-A simple Windows utility to **instantly switch between 5120x1440 and 2560x1440 resolutions** for **Dota 2** on **ultrawide monitors** — with one double-click.
-The window closes automatically after switching. No extra clicks.
+A tiny Windows tool to **instantly switch between 5120x1440 and 2560x1440** for **Dota 2** on ultrawide monitors — with one double-click.
 
---
-
+---
 
 ## 🎮 Why This Tool Exists
 
-I am still prefer play dota in 2560x1440 due to minimap focus and overall performance. 
-but every time like to play had to right click display scroll click click clikc .....
-yeah I am lazy . 
+I use a **5120x1440 ultrawide monitor**, but for **Dota 2**, I still prefer **2560x1440**:
+- The minimap feels more focused
+- The UI looks better
+- Performance is often more stable
 
-This tool lets me:
-* Use **5120x1440** for desktop/work
-* Switch to **2560x1440** before launching Dota 2 just double click a desktop shortcut.
-* Switch back after gaming — instantly
+But every time I wanted to play, I had to:
+right-click → display settings → scroll → click → click → click…
 
-here is short video (now updated no need admin so the yes no popup screen no longer show)
+So I made this.  
+Because I’m lazy — and gamers should be too.
+
+This tool lets you:
+- Use **5120x1440** for desktop/work
+- Double-click to switch to **2560x1440** before Dota 2
+- Double-click again to switch back after gaming
+
+No menus. No setup every time. Just one click.
+
+🎥 Short demo:  
 https://www.youtube.com/shorts/znN8-oXJh4I
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Quick Start (For Gamers)
 
-1. Download or clone this repository
-2. Double-click `setup.bat` (first time only)
-3. Then double-click `switch_resolution.bat`
-4. Resolution toggles instantly
+1. Download **`Dota2ResolutionSwitcher.exe`** from the Releases page
+2. Put it anywhere (Desktop, Downloads, etc.)
+3. **Double-click it once** → first run does a simple setup
+4. A desktop shortcut **“Dota2 Resolution Switcher”** will be created
+5. From now on, just double-click the shortcut to toggle resolution
 
-That’s it.
+That’s it.  
+No scripts. No folders. One file.
+
+---
+
+## ⭐ How to Use
+
+- Double-click → switches:
+  - **5120x1440 → 2560x1440**
+  - or **2560x1440 → 5120x1440**
+- The app runs silently and exits.
+- Use it before and after launching Dota 2.
+
+👉 Tip: Keep the shortcut on your desktop for fast access.
 
 ---
 
 ## ✨ Features
 
-* ✅ One-click toggle between **5120x1440 ↔ 2560x1440**
-* ✅ Optimized for **Dota 2** on ultrawide monitors
-* ✅ Silent operation — window closes automatically
-* ✅ No admin rights required (in most cases)
-* ✅ Lightweight — uses NirCmd utility
-* ⭐ **Desktop shortcut ready for instant access**
+- ✅ One-click toggle between **5120x1440 ↔ 2560x1440**
+- 🎮 Designed for **Dota 2** ultrawide players
+- 🔇 Silent — no console windows
+- 🖥️ Portable — single EXE, no install
+- ⭐ Auto creates desktop shortcut on first run
 
 ---
 
 ## 🖥️ Requirements
 
-* Windows 10 / 11
-* PowerShell (included with Windows)
-* Monitor that supports both **5120x1440** and **2560x1440**
-
----
-
-## 📦 Installation
-
-### Option 1: Automatic Setup (Recommended)
-
-1. Download or clone this repository
-2. **Double-click `setup.bat`** — it will automatically download NirCmd
-3. Done! You can now use `switch_resolution.bat`
-
-**Alternative:** If `setup.bat` doesn’t work, right-click `setup_nircmd.ps1` → **Run with PowerShell**
-
----
-
-### Option 2: Manual Setup
-
-1. Download or clone this repository
-2. Download NirCmd from [https://www.nirsoft.net/utils/nircmd.html](https://www.nirsoft.net/utils/nircmd.html)
-3. Extract `nircmd.exe` and place it in the same folder as `switch_resolution.bat`
-4. Done!
-
----
-
-## ▶️ Usage
-
-### ⚠️ Important: Which File to Run?
-
-👉 **Always double-click `switch_resolution.bat`** — NOT the `.ps1` files.
-
-* ✅ DO: Double-click `switch_resolution.bat`
-* ❌ DON’T: Double-click `.ps1` files directly (Windows opens them as text)
-
-The `.ps1` scripts are called automatically by the `.bat` file.
-
----
-
-### 🎯 Basic Usage
-
-Just double-click `switch_resolution.bat`:
-
-* If current is **5120x1440** → switches to **2560x1440**
-* If current is **2560x1440** → switches to **5120x1440**
-* If neither → defaults to **2560x1440**
-
-The window closes automatically after switching.
-
----
-
-### ⭐ Create Desktop Shortcut (Highly Recommended)
-
-For the best experience, create a desktop shortcut so you can switch resolution before and after gaming in one click:
-
-1. Right-click on `switch_resolution.bat`
-2. Select **Send to → Desktop (create shortcut)**
-3. Rename it (e.g., `Dota2 Resolution Switcher`)
-4. (Optional) Change icon: Right-click shortcut → **Properties → Change Icon**
-
-Now you can switch resolutions instantly from your desktop before launching Dota 2.
-
----
-
-## 📁 Files Included
-
-### Essential Files
-
-* `switch_resolution.bat` — Main launcher (double-click this)
-* `switch_resolution_nircmd.ps1` — PowerShell script to detect and switch resolution
-* `nircmd.exe` — NirCmd utility (downloaded by setup)
-
-### Optional Files
-
-* `setup.bat` — Automatic NirCmd setup launcher
-* `setup_nircmd.ps1` — Setup PowerShell script
-* `README.md` — This guide
-* `QUICK_START.txt` — Quick reference
-
----
-
-## ⚙️ How It Works
-
-1. Detects current screen resolution
-2. Chooses the target resolution (toggles between the two)
-3. Uses NirCmd to change display resolution
-4. Exits silently
+- Windows 10 / 11
+- Primary monitor supports **5120x1440** and **2560x1440**
 
 ---
 
 ## 🛠️ Troubleshooting
 
-### ".ps1 file opens as text"
-
-This is normal on Windows.
-
-✅ Always run `switch_resolution.bat` instead.
-
----
-
-### "NirCmd.exe not found"
-
-* Double-click `setup.bat` to download automatically
-* Or manually place `nircmd.exe` in the script folder
-
----
-
-### Resolution change fails
-
-* Ensure your monitor supports the target resolutions
-* Try **Run as administrator**
-* Update graphics drivers
-* Check Windows display settings
-
----
-
-### Window doesn’t close
-
-* Use the latest version
-* Errors may be shown if something fails
-
----
-
-## 🔧 Customizing Resolutions
-
-Edit `switch_resolution_nircmd.ps1`:
-
-```powershell
-if ($currentRes -eq "2560x1440") {
-    $targetWidth = 5120
-    $targetHeight = 1440
-} elseif ($currentRes -eq "5120x1440") {
-    $targetWidth = 2560
-    $targetHeight = 1440
-}
-```
-
----
-
-## 📜 License
-
-* Scripts in this project: **MIT License**
-* Uses **NirCmd** by NirSoft (freeware)
-
----
-
-## 👤 Author
-
-Created by [invabun](https://github.com/invabun)
-
-If this tool helps you, feel free to star the repo or open an issue.
+- ❗ If switching fails:  
+  Right-click the EXE → **Run as Administrator**
+- ❗ On work/school PCs:  
+  Security policies may block downloads or shortcuts.
+- ❗ Multi-monitor setups:  
+  Tool targets the **primary display**.
 
 ---
 
 ## 🗑️ Uninstall
 
-1. Delete the project folder
-2. Remove any desktop shortcuts
+1. Delete `Dota2ResolutionSwitcher.exe`
+2. Delete the desktop shortcut
+3. (Optional) Delete folder:  
+   `%LOCALAPPDATA%\Dota2ResolutionSwitcher`
 
-No system changes remain.
+Nothing else is left behind.
+
+---
+
+## ⚙️ How It Works (Brief)
+
+On first run:
+- Downloads **NirCmd** (from NirSoft) into your local app data folder
+- Creates a desktop shortcut
+
+On every run:
+- Calls NirCmd to change screen resolution
+- Exits immediately
+
+No background process.
+
+---
+
+## 🙏 Credits
+
+- Resolution switching powered by **NirCmd** by NirSoft  
+  https://www.nirsoft.net/utils/nircmd.html  
+- EXE packaging via **PS2EXE**
+
+NirCmd is downloaded from the official site on first run.  
+It is not redistributed in this repo.
+
+---
+
+## 📜 License
+
+This project’s scripts are released under the **MIT License**.  
+See `LICENSE` for details.
+
+---
+
+## 👤 Author
+
+Created by **Bruce from Malaysia**  
+GitHub: https://github.com/invabun
+
+If this helps you, feel free to star the repo or share it with other ultrawide Dota players.
 
 ---
 
 ## 📝 Changelog
 
 ### v1.0
-
-* Initial release
-* Toggle between 5120x1440 and 2560x1440
-* Silent operation
-* Automatic NirCmd setup
+- First release
+- Single portable EXE
+- One-click toggle between 5120x1440 and 2560x1440
+- Silent operation
+- Auto desktop shortcut
